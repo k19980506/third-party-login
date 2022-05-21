@@ -34,7 +34,7 @@ exports.create = (req, res) => {
 		.then((data) => {
 			res.send(data);
 		})
-		.catch((e) => {
+		.catch(() => {
 			res.status(500).send({
 				message: "InternalServerError",
 			});
