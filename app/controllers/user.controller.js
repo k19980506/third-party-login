@@ -21,6 +21,7 @@ exports.create = (req, res) => {
 
 	const user = {
 		email: req.body.email,
+		// TODO: Add encryption function
 		password: req.body.password,
 		name: req.body.name,
 		gender: req.body.gender,
