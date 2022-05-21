@@ -7,4 +7,6 @@ module.exports = (app) => {
 	router.get("/:id", users.retrieve);
 	router.put("/:id", users.update);
 	router.delete("/:id", users.delete);
+
+	app.use("/api/users", router);
 };
