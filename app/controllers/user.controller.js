@@ -14,8 +14,7 @@ exports.create = (req, res) => {
 	birthday = new Date(
 		birthday.substr(0, 4),
 		birthday.substr(4, 2) - 1,
-		birthday.substr(6, 2),
-		8
+		birthday.substr(6, 2)
 	);
 	now = new Date();
 	age = now.getYear() - birthday.getYear();
